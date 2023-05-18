@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header-svg {
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.intro-head {
+  animation: intro-head-anim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes intro-head-anim {
+  from {
+    transform: translateY(250px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sun-transition {
+  from {
+    transform: translateY(150px);
+  }
+  to {
+    transform: translateY(-20px);
+    transform: translateX(40px);
+  }
+}
+
+@keyframes moon-transition {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(250px);
+  }
+}
+
+#g1 {
+  
+}
+
+#g1 #Moon{
+  animation: intro-head-anim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+#g1 #Stars1 {
+  animation: twinkle 7s 2s infinite linear;
+}
+
+#g1 #Stars2 {
+  animation: twinkle 7s infinite linear;
+}
+
+#g1 #Stars3 {
+  animation: twinkle 7s 5s infinite linear;
+}
+
+#g1 #Sun{
+  
+}
+
+#g1:hover #background{
+  fill: url(#sunnyGradient);
+}
+
+#g1:hover #Hill1{
+  fill: green;
+    transition: fill 0.5s ease;
+}
+#g1:hover #Hill2{
+  fill: green;
+    transition: fill 0.5s ease;
+}
+#g1:hover #Hill3{
+  fill: "#3D63E7";
+}
+#g1:hover #Hill4{
+  fill: "#3D63E7";
+}
+
+#g1:hover #Moon {
+  animation: moon-transition 0.5s ease forwards;; 
+}
+
+#g1:hover #Sun {
+  animation: sun-transition 0.5s ease forwards;;
+}
+
+#g1:hover #Stars1 {
+  transform: translateY(250px);
+}
+
+#g1:hover #Stars2 {
+  transform: translateY(250px);
+}
+
+#g1:hover #Stars3 {
+  transform: translateY(250px);
+}
+
+
