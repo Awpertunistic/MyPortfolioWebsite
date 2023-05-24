@@ -5,13 +5,14 @@
 }
 
 .Header {
-  height: 100%;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
 .Header-text{
-  color: #fff;
+  font-family:'Courier New', Courier, monospace;
+  color: #070707;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,17 +44,17 @@
   color: #000;
 }
 
-.section-opening-img {
+/* .section-opening-img {
   position: relative;
   width: 100%;
   height: auto;
   z-index: 0;
-}
+} */
 
 nav {
   position: absolute;
   background: #333;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +66,7 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   margin-left: 20px;
   font-size: 18px;
@@ -95,12 +96,6 @@ nav a.logo {
 
 @keyframes typing {
   from { width: 0 }
-}
-
-.header-svg {
-  padding: 0;
-  margin: 0;
-  overflow: auto;
 }
 
 form {

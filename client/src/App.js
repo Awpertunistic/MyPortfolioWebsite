@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 import Axios from "axios";
 import Typewriter from "./Typewriter";
-import blackbackground from "./old-black-background.jpg";
+import ParticlesBackground from "./particle-background";
+import ProjectsSection from "./ProjectSection";
+
 
 function App() {
   return (
     <div className="App">
       <div className="Header">
+        <ParticlesBackground />
         <nav>
           <a href="#top" class="logo">
             N/H
@@ -17,16 +20,11 @@ function App() {
             <a href="#form">Form</a>
           </div>
         </nav>
-        <img
-          src={blackbackground}
-          alt="blackbackground"
-          className="section-opening-img"
-        ></img>
         <div className="Header-text">
           <Typewriter />
         </div>
       </div>
-
+      <ProjectsSection />
       <section id="form">
         <form>
           <h2>Contact Me</h2>

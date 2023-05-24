@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+#projects {
+  padding: 60px 0;
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}
